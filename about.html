@@ -18,12 +18,15 @@ permalink: /about/
 </header>
 
 <div class="about-body">
-  <p><em>Great tools shouldn't stay hidden.</em></p>
-  <p>The open science community builds incredible tools across every imaging modality — but they're scattered across GitHub orgs, lab websites, and word of mouth. Great work gets missed. This directory exists so it doesn't have to.</p>
+  <p><em>Building an open educational resource for neuroimaging quality assurance.</em></p>
 
-  <p>VisualQA is a shared overview of open-source software across imaging modalities. If everyone contributes what they know, it becomes a way for the whole community to stay updated and discover each other's work.</p>
+  <p>Quality assurance is an important part of neuroimaging data processing, but it is also one of the least standardized processes. Two people can look at the same scan and disagree about whether it passes — often because nobody ever showed them what a given artifact actually looks like.</p>
 
-  <p class="about-gap"><strong>How health status works.</strong> A weekly GitHub Actions cron job checks each tool's repository.</p>
+  <p>VisualQA aims to close that gap with annotated examples of common imaging artifacts, practical visual inspection guidelines, and curated resources — so researchers can learn QA, and perform it more consistently.</p>
+
+  <p>The project began around MRI and fMRI. It is now expanding to EEG, with QA resources planned for both. If you work in either area — or care about building open educational resources — you're welcome to join in.</p>
+
+  <p class="about-gap"><strong>How health status works.</strong> The curated tools in the directory are checked weekly by a GitHub Actions cron job against each tool's repository.</p>
   <ul class="health-legend">
     <li><span class="dot dot-active"></span> Active — committed within 6 months</li>
     <li><span class="dot dot-quiet"></span> Quiet — 6 to 24 months</li>
@@ -31,7 +34,7 @@ permalink: /about/
     <li><span class="dot dot-external"></span> Not on GitHub</li>
   </ul>
 
-  <p><strong>What gets included.</strong> Tools need to be relevant to their modality, open-source, and actively maintained. New or low-star tools are welcome as long as they solve a real problem and are being worked on.</p>
+  <p><strong>What gets included.</strong> Resources need to help someone actually do QA — spot an artifact, judge a scan, or automate a check — and be open and actively maintained. Small or little-known tools are welcome as long as they solve a real problem and are being worked on.</p>
 
   <p><strong>How to contribute.</strong> Open an issue directly on GitHub, or submit a pull request. Each tool is a YAML entry: name, url, description, language, modality (top-level: MRI, EEG), optionally submodality (e.g. fMRI, diffusion) and github (owner/repo for health tracking), and added_by (with optional added_by_github handle) to credit whoever suggested it.</p>
 
@@ -50,7 +53,6 @@ permalink: /about/
 
   <p class="about-gap"><strong>Contributors:</strong></p>
   <div class="contributor-wall">
-    <span class="contributor"><a href="https://github.com/henrfo" target="_blank" rel="noopener noreferrer"><img class="contributor-avatar" src="https://github.com/henrfo.png?size=48" alt="" loading="lazy">henrfo</a></span>
     {%- for name in contributors -%}
       {%- assign gh = '' -%}
       {%- assign url = '' -%}
@@ -73,9 +75,9 @@ permalink: /about/
     {%- endfor -%}
   </div>
 
-  <p>Started by <a href="mailto:henrfo@uio.no">Henrik Formoe (University of Oslo)</a>. Open to everyone.</p>
+  <p>Built at Neurohackademy 2026. Open to everyone.</p>
 </div>
 
 <footer class="footer">
-  <a href="https://github.com/henrfo/VisualQA" target="_blank" rel="noopener noreferrer">VisualQA on GitHub</a>
+  Built at Neurohackademy 2026 · <a href="https://github.com/henrfo/VisualQA" target="_blank" rel="noopener noreferrer">VisualQA on GitHub</a>
 </footer>

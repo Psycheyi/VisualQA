@@ -1,8 +1,14 @@
 # VisualQA
 
-A community-driven directory of open-source imaging software — automatically tracking what exists and what's still maintained.
+Building an open educational resource for neuroimaging quality assurance.
 
 **Live site:** [henrfo.github.io/VisualQA](https://henrfo.github.io/VisualQA)
+
+Quality assurance is an important part of neuroimaging data processing, but it is also one of the least standardized processes. This project builds an open educational website with annotated examples of common imaging artifacts, practical visual inspection guidelines, and curated resources — to help researchers learn QA and perform it more consistently.
+
+Started around MRI/fMRI and now expanding to EEG, with QA resources planned for both.
+
+Built at Neurohackademy 2026.
 
 ## How it works
 
