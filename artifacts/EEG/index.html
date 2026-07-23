@@ -1,0 +1,41 @@
+---
+layout: default
+title: Ocular eye blink
+---
+
+<section class="artifact-identification">
+  <h2>Ocular eye blink</h2>
+
+  <h3>What you will see</h3>
+  <p>
+    Large, slow deflection with a frontal maximum; often clearly visible in
+    vertical EOG channels.
+  </p>
+
+  <figure class="qc-figure">
+    <img
+      src="/VisualQA/assets/images/eeg_eyeBlink.png"
+      alt="EEG recording showing a large, slow eye-blink deflection with a frontal maximum.">
+  </figure>
+
+  <h3>Judgement calls and decision-making considerations</h3>
+  <ul>
+    <li>Did the blink occur during a critical period?</li>
+    <li>Is it isolated or frequent?</li>
+    <li>Is the frontal activity clearly separable from the neural signal?</li>
+    <li>Would rejecting all blink trials leave enough trials in every condition?</li>
+  </ul>
+
+  <h3>Possible solution and response</h3>
+  <ul>
+    <li>Improve participant instructions.</li>
+    <li>Mark and reject affected epochs.</li>
+    <li>Use ICA or regression when appropriate.</li>
+    <li>Retain unaffected portions of continuous data.</li>
+  </ul>
+</section>
+
+<style>
+  .qc-figure { margin: 1.5rem 0; }
+  .qc-figure > img { width: 100%; height: auto; display: block; }
+</style>
